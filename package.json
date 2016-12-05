@@ -1,0 +1,17 @@
+{
+  "name": "prebupblish-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "mkdir lib && cp src/index.js lib/index.js",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [],
+  "author": "Vladimir Guguiev <wizardzloy@gmail.com>",
+  "license": "ISC"
+}
